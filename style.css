@@ -8,6 +8,91 @@
   --font-color: hsla(0, 0%, 100%, 0.75);
 }
 
-
 /* font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--header-button-background);
+  /* color: var(--font-color); */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  /* transform: translateY(3%); */
+  width: 305px; /* Slimmed down the width to match the image of the design */
+}
+
+/* BUTTON STYLES */
+button {
+  background-color: var(--header-button-background);
+  color: var(--font-color);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2rem;
+  margin-top: 1rem;
+}
+
+
+/* ORANGE CONTAINER */
+.sedan_container {
+  background-color: var(--orange-background-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2.5rem;
+}
+
+div.sedan_container h1,
+div.suv_container h1,
+div.luxury_container h1 {
+  color: var(--header-button-background);
+  font-family: 'Big Shoulders Display', cursive;
+  margin-top: 1.2rem;
+  font-size: 2.2rem;
+}
+
+div.sedan_container p,
+div.suv_container p,
+div.luxury_container p {
+  color: var(--font-color);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  margin-top: 1.2rem;
+}
+
+/* MIDDLE CONTAINER */
+.suv_container {
+  background-color: var(--medium-blue-background-color);
+  padding: 2.5rem;
+}
+
+div.sedan_container button {
+  color: var(--orange-background-color);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+div.suv_container button {
+  color: var(--medium-blue-background-color);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* DARK GREEN CONTAINER */
+.luxury_container {
+  background-color: var(--dark-green-background-color);
+  padding: 2.5rem;
+  padding-bottom: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+div.luxury_container button {
+  color: var(--dark-green-background-color);
+  font-family: 'Lexend Deca', sans-serif;
+}
