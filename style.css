@@ -96,3 +96,46 @@ div.luxury_container button {
   color: var(--dark-green-background-color);
   font-family: 'Lexend Deca', sans-serif;
 }
+
+/* MEDIA STYLING */
+
+@media screen and (min-width: 1000px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 900px;
+    max-width: 900px;
+    /* transform: translateY(50%); */
+    min-height: 1000px; 
+  }
+  .sedan_container {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .suv_container,
+  .sedan_container,
+  .luxury_container {
+    height: 500px;
+  }
+  div.sedan_container button,
+  div.suv_container button,
+  div.luxury_container button {
+    margin-top: 5rem;
+  }
+  div.sedan_container p,
+  div.suv_container p,
+  div.luxury_container p {
+    width: 210px;
+    margin-right: 2rem;
+    line-height: 1.8;
+    padding-top: 1rem;
+  }
+  div.sedan_container h1,
+  div.suv_container h1,
+  div.luxury_container h1 {
+    padding-top: 1rem;
+  }
+  .luxury_container {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
